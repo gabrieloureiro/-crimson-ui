@@ -1,0 +1,7 @@
+{
+  "name": "@crimson-ui/colors",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "author": "Gabriel Loureiro <gabrieloureirof@gmail.com>",
+  "license": "MIT"
+}

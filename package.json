@@ -1,0 +1,28 @@
+{
+  "name": "crimson-ui",
+  "author": "Gabriel Loureiro <gabrieloureirof@gmail.com>",
+  "license": "MIT",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "start": "lerna run start",
+    "storybook": "lerna run storybook --scope=@crimson-ui/react",
+    "build-storybook": "lerna run build-storybook --scope=@crimson-ui/react"
+  },
+  "devDependencies": {
+    "eslint": "^8.23.0",
+    "lerna": "^5.4.3",
+    "@typescript-eslint/eslint-plugin": "^5.35.2-alpha.8",
+    "eslint-config-standard-with-typescript": "^22.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.5",
+    "eslint-plugin-promise": "^6.0.1",
+    "typescript": "^4.8.2"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "@crimson-ui/react",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "author": "Gabriel Loureiro <gabrieloureirof@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@crimson-ui/styles": "*",
+    "@crimson-ui/web": "*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.13",
+    "@storybook/addon-actions": "^6.5.10",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/addon-interactions": "^6.5.10",
+    "@storybook/addon-links": "^6.5.10",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/builder-webpack4": "^6.5.10",
+    "@storybook/manager-webpack4": "^6.5.10",
+    "@storybook/react": "^6.5.10",
+    "@storybook/testing-library": "^0.0.13",
+    "@types/react": "^18.0.17",
+    "@types/react-icons": "^3.0.0",
+    "babel-loader": "^8.2.5"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  }
+}
