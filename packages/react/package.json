@@ -30,5 +30,5 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
-  "gitHead": "2a57302c9a6a71ef4681dd79fb7427409fee2818"
+  "gitHead": "becd7a1fe5080cabf79f965eb25d17be24ace153"
 }

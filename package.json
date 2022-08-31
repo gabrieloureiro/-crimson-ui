@@ -11,6 +11,7 @@
     ]
   },
   "scripts": {
+    "publish": "lerna publish --registry=https://npm.pkg.github.com/ --force-publish",
     "start": "lerna run start",
     "storybook": "lerna run storybook --scope=@crimson-ui/react",
     "build-storybook": "lerna run build-storybook --scope=@crimson-ui/react"
