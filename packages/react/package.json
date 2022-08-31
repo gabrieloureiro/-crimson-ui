@@ -1,12 +1,12 @@
 {
   "name": "@crimson-ui/react",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "src/index.ts",
   "author": "Gabriel Loureiro <gabrieloureirof@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@crimson-ui/styles": "^1.0.6",
-    "@crimson-ui/web": "^1.0.6",
+    "@crimson-ui/styles": "^1.0.7",
+    "@crimson-ui/web": "^1.0.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0"
@@ -30,5 +30,5 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
-  "gitHead": "becd7a1fe5080cabf79f965eb25d17be24ace153"
+  "gitHead": "e98668072f776450830d55bcb682822ebc1e7f6b"
 }
