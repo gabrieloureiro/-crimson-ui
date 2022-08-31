@@ -1,10 +1,14 @@
 {
-  "packages": [
-    "packages/*"
-  ],
+  "packages": ["packages/*"],
   "npmClient": "yarn",
   "useWorkspaces": true,
   "version": "independent",
   "$schema": "node_modules/lerna/schemas/lerna-schema.json",
-  "useNx": false
+  "useNx": false,
+  "command": {
+    "publish": {
+      "message": "chore(publish): 🤖 update packages",
+      "verifyAccess": false
+    }
+  }
 }
