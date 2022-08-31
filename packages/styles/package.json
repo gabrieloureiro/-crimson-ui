@@ -3,9 +3,9 @@
   "version": "1.0.3",
   "main": "src/index.ts",
   "author": "Gabriel Loureiro <gabrieloureirof@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@crimson-ui/web": "^1.0.3"
   },
-  "gitHead": "fda3111fa3814f712e023fc883c7f17f34e7b7ee"
+  "gitHead": "91c26efd95c8248d4368a459879f17c0f41a61f2"
 }
