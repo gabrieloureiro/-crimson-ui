@@ -1,6 +1,5 @@
 import { colors } from '@crimson-ui/colors';
-import { createStitches, defaultThemeMap } from '@stitches/react';
-import { ScaleValue, PropertyValue, CSS as StitchesCSS } from '@stitches/react';
+import { createStitches, defaultThemeMap, StitchesCSS, utils } from './utils';
 
 export const {
   styled,
@@ -24,6 +23,7 @@ export const {
 
     space: {
       auto: 'auto',
+      none: '0',
       px: '1px',
       1: '0.25rem',
       2: '0.5rem',
@@ -111,59 +111,7 @@ export const {
     mobile: '@media (max-width: 768px)',
   },
 
-  utils: {
-    justify: (value: PropertyValue<'justifyContent'>) => ({
-      justifyContent: value,
-    }),
-    align: (value: PropertyValue<'alignItems'>) => ({
-      alignItems: value,
-    }),
-    flexDir: (value: PropertyValue<'flexDirection'>) => ({
-      flexDirection: value,
-    }),
-
-    pt: (value: ScaleValue<'space'>) => ({
-      paddingTop: value,
-    }),
-    pr: (value: ScaleValue<'space'>) => ({
-      paddingRight: value,
-    }),
-    pb: (value: ScaleValue<'space'>) => ({
-      paddingBottom: value,
-    }),
-    pl: (value: ScaleValue<'space'>) => ({
-      paddingLeft: value,
-    }),
-    px: (value: ScaleValue<'space'>) => ({
-      paddingLeft: value,
-      paddingRight: value,
-    }),
-    py: (value: ScaleValue<'space'>) => ({
-      paddingTop: value,
-      paddingBottom: value,
-    }),
-
-    mt: (value: ScaleValue<'space'>) => ({
-      marginTop: value,
-    }),
-    mr: (value: ScaleValue<'space'>) => ({
-      marginRight: value,
-    }),
-    mb: (value: ScaleValue<'space'>) => ({
-      marginBottom: value,
-    }),
-    ml: (value: ScaleValue<'space'>) => ({
-      marginLeft: value,
-    }),
-    mx: (value: ScaleValue<'space'>) => ({
-      marginLeft: value,
-      marginRight: value,
-    }),
-    my: (value: ScaleValue<'space'>) => ({
-      marginTop: value,
-      marginBottom: value,
-    }),
-  },
+  utils,
 });
 
 export type CSS = StitchesCSS<typeof config>;

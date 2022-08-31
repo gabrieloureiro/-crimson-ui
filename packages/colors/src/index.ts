@@ -1,7 +1,24 @@
-const baseColors = {
-  light: '#996DFF ',
-  main: '#8257E5',
-  dark: '#633BBC',
+export const colors = {
+  primary: '#EA1D2C',
+  primaryDark: '#C31835',
+  primaryLight: '#EF5753',
+  primaryLightest: '#FCEBEA',
+  secondary: '#FFFFFF',
+  secondaryDark: '#C31835',
+  secondaryLight: '#EF5753',
+  secondaryLightest: '#FCEBEA',
+  white: '#FFFFFF',
+  black: '#3E3E3E',
+  gray: '#DCDCDC',
+  grayLight: '#F2F2F2',
+  grayDarker: '#A6A6A6',
+  grayDarkest: '#717171',
+  information: '#22A1D0',
+  informationLight: '#33B5E5',
+  informationLightest: '#DBF2FB',
+  focus: '#4d90fe',
+  attention: '#E7A74E',
+  positive: '#50A773',
+  error: '#FF7752',
+  informative: '#33B5E5',
 };
-
-export const colors = { ...baseColors };
