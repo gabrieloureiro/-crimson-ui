@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "main": "src/index.ts",
   "author": "Gabriel Loureiro <gabrieloureirof@gmail.com>",
-  "license": "MIT",
+  "license": "ISC",
   "dependencies": {
     "@crimson-ui/styles": "^1.0.1",
     "@crimson-ui/web": "^1.0.1",
@@ -29,5 +29,6 @@
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
-  }
+  },
+  "gitHead": "65b2f86e9338e4196c68fba59013048871ed54f3"
 }
