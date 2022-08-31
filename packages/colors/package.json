@@ -1,6 +1,6 @@
 {
   "name": "@crimson-ui/colors",
-  "version": "1.0.2-alpha.0",
+  "version": "1.0.2",
   "main": "src/index.ts",
   "author": "Gabriel Loureiro <gabrieloureirof@gmail.com>",
   "license": "ISC",
