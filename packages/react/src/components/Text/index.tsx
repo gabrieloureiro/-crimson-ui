@@ -4,9 +4,10 @@ import { styled, CSS } from '@crimson-ui/web';
 
 const StyledText = styled('span', TextCSS);
 
-type TextAs = 'p' | 'span';
-
-export type TextProps = CSS & ComponentProps<typeof StyledText>;
+export type TextProps = CSS &
+  ComponentProps<typeof StyledText> & {
+    as?: 'p' | 'span';
+  };
 
 export const Text: FC<TextProps> = ({ children, as = 'span', ...props }) => {
   return (

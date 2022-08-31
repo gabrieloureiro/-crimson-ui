@@ -3,7 +3,7 @@
   "author": "Gabriel Loureiro <gabrieloureirof@gmail.com>",
   "license": "MIT",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "README.md",
   "private": true,
   "workspaces": {
     "packages": [
