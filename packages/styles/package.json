@@ -1,11 +1,11 @@
 {
   "name": "@crimson-ui/styles",
-  "version": "1.0.10-alpha.0",
+  "version": "1.0.10-alpha.1",
   "main": "src/index.ts",
   "author": "Gabriel Loureiro <gabrieloureirof@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@crimson-ui/web": "^1.0.10-alpha.0"
+    "@crimson-ui/web": "^1.0.10-alpha.1"
   },
-  "gitHead": "519b3624e8aeb55aa498154d512fcd54a3d2331e"
+  "gitHead": "2ba8b85038892268508c0a2ccb9af0b391ee3b42"
 }
