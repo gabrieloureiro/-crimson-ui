@@ -4,14 +4,5 @@
   "main": "src/index.ts",
   "author": "Gabriel Loureiro <gabrieloureirof@gmail.com>",
   "license": "MIT",
-  "gitHead": "03218bf7b6e5d669489b0a9dc7b013543947a432",
-  "repository": {
-    "type": "git",
-    "url": "ssh://git@github.com/gabrieloureiro/crimson-ui.git",
-    "directory": "packages/*"
-  },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://npm.pkg.github.com/@gabrieloureiro/"
-  }
+  "gitHead": "03218bf7b6e5d669489b0a9dc7b013543947a432"
 }
