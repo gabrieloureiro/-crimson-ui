@@ -10,6 +10,14 @@
       "packages/*"
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/gabrieloureiro/crimson-ui.git",
+    "directory": "packages/*"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "publish": "lerna publish --force-publish",
     "start": "lerna run start",
