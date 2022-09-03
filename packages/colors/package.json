@@ -1,8 +1,17 @@
 {
   "name": "@crimson-ui/colors",
-  "version": "1.0.40",
+  "version": "1.0.41",
   "main": "src/index.ts",
   "author": "Gabriel Loureiro <gabrieloureirof@gmail.com>",
   "license": "MIT",
-  "gitHead": "3f0ca60cea6dda570e9e8bbe333ea7396c37a382"
+  "gitHead": "03218bf7b6e5d669489b0a9dc7b013543947a432",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/gabrieloureiro/crimson-ui.git",
+    "directory": "packages/*"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/@gabrieloureiro/"
+  }
 }

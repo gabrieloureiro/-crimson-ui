@@ -1,12 +1,12 @@
 {
   "name": "@crimson-ui/web",
-  "version": "1.0.40",
+  "version": "1.0.41",
   "main": "src/index.ts",
   "author": "Gabriel Loureiro <gabrieloureirof@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@crimson-ui/colors": "^1.0.40",
+    "@crimson-ui/colors": "^1.0.41",
     "@stitches/react": "^1.2.8"
   },
-  "gitHead": "3f0ca60cea6dda570e9e8bbe333ea7396c37a382"
+  "gitHead": "03218bf7b6e5d669489b0a9dc7b013543947a432"
 }
