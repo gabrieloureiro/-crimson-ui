@@ -1,8 +1,8 @@
 {
   "name": "@crimson-ui/colors",
-  "version": "1.1.1-alpha.0",
+  "version": "1.1.2-alpha.0",
   "main": "src/index.ts",
   "author": "Gabriel Loureiro <gabrieloureirof@gmail.com>",
   "license": "MIT",
-  "gitHead": "57bda1813cf1c6617d16a8789d19640691fd4db0"
+  "gitHead": "951b894f51910cd1c694aa765c177eae25ee57ae"
 }
