@@ -1,22 +1,22 @@
 import { css } from '@crimson-ui/web';
 
-export const Text = css({
+export const Heading = css({
   variants: {
     size: {
-      xs: {
-        fontSize: '$xs',
-      },
       sm: {
-        fontSize: '$sm',
+        fontSize: '$xl ',
       },
       md: {
-        fontSize: '$md',
+        fontSize: '$2xl',
       },
       lg: {
-        fontSize: '$lg',
+        fontSize: '$4xl',
       },
       xl: {
-        fontSize: '$xl',
+        fontSize: '$6xl',
+      },
+      '2xl': {
+        fontSize: '$7xl',
       },
     },
   },

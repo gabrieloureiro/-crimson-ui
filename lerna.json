@@ -3,10 +3,9 @@
   "npmClient": "yarn",
   "useWorkspaces": true,
   "version": "independent",
-  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
-  "useNx": false,
   "command": {
     "publish": {
+      "registry": "https://npm.pkg.github.com/",
       "message": "chore(publish): 🤖 update packages",
       "verifyAccess": false
     }

@@ -9,7 +9,7 @@ export type TextProps = CSS &
     as?: 'p' | 'span';
   };
 
-export const Text: FC<TextProps> = ({ children, as = 'span', ...props }) => {
+export const Text: FC<TextProps> = ({ children, as = 'p', ...props }) => {
   return (
     <StyledText as={as} {...props}>
       {children}

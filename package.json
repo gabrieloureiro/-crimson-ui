@@ -1,5 +1,5 @@
 {
-  "name": "crimson-ui",
+  "name": "@gabrieloureiro/crimson-ui",
   "author": "Gabriel Loureiro <gabrieloureirof@gmail.com>",
   "license": "MIT",
   "version": "1.0.0",
@@ -11,7 +11,7 @@
     ]
   },
   "scripts": {
-    "publish": "lerna publish --registry=https://npm.pkg.github.com/ --force-publish",
+    "publish": "lerna publish --force-publish",
     "start": "lerna run start",
     "storybook": "lerna run storybook --scope=@crimson-ui/react",
     "build-storybook": "lerna run build-storybook --scope=@crimson-ui/react"

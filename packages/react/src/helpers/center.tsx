@@ -6,7 +6,7 @@ const StyledCenter = styled('div', {
   display: 'flex',
   align: 'center',
   justify: 'center',
-  height: '100vh',
+  height: '120px',
   p: '$5',
 });
 

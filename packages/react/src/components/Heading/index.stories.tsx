@@ -1,29 +1,29 @@
 import { Story, Meta } from '@storybook/react';
 import React from 'react';
-import { Text as TextReactComponent, TextProps } from '.';
+import { Heading as HeadingReactComponent, HeadingProps } from '.';
 import { CenterStoryComponent, disabledArgTypes } from '../../helpers';
 
 export default {
-  title: 'Typography/Text',
-  component: TextReactComponent,
+  title: 'Typography/Heading',
+  component: HeadingReactComponent,
   argTypes: {
     ...disabledArgTypes,
     children: { control: { type: 'text' } },
     size: {
-      options: ['xs', 'sm', 'md', 'lg', 'xl'],
+      options: ['sm', 'md', 'lg', 'xl', '2xl'],
       control: { type: 'inline-radio' },
     },
   },
   args: {
-    children: 'Text',
+    children: 'Heading',
     size: 'sm',
-  } as TextProps,
+  } as HeadingProps,
 } as Meta;
 
-const Template: Story<TextProps> = (args) => (
+const Template: Story<HeadingProps> = (args) => (
   <CenterStoryComponent>
-    <TextReactComponent css={{ m: '$auto' }} {...args} />
+    <HeadingReactComponent css={{ m: '$auto' }} {...args} />
   </CenterStoryComponent>
 );
 
-export const Text = Template.bind({});
+export const Heading = Template.bind({});
