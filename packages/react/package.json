@@ -1,12 +1,12 @@
 {
   "name": "@crimson-ui/react",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "main": "src/index.ts",
   "author": "Gabriel Loureiro <gabrieloureirof@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@crimson-ui/styles": "^1.0.11",
-    "@crimson-ui/web": "^1.0.11",
+    "@crimson-ui/styles": "^1.0.12",
+    "@crimson-ui/web": "^1.0.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0"
