@@ -1,7 +1,8 @@
-import { Story, Meta } from '@storybook/react';
+import { Meta, Story } from '@storybook/react';
 import React from 'react';
-import { Text as TextReactComponent, TextProps } from '.';
+
 import { CenterStoryComponent, disabledArgTypes } from '../../helpers';
+import { Text as TextReactComponent, TextProps } from '.';
 
 export default {
   title: 'Typography/Text',

@@ -1,7 +1,8 @@
-import { Story, Meta } from '@storybook/react';
+import { Meta, Story } from '@storybook/react';
 import React from 'react';
-import { Heading as HeadingReactComponent, HeadingProps } from '.';
+
 import { CenterStoryComponent, disabledArgTypes } from '../../helpers';
+import { Heading as HeadingReactComponent, HeadingProps } from '.';
 
 export default {
   title: 'Typography/Heading',

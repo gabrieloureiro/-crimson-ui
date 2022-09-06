@@ -1,8 +1,14 @@
-import { PropertyValue, ScaleValue, CSS, createStitches, defaultThemeMap } from '@stitches/react';
+import {
+  createStitches,
+  CSS,
+  defaultThemeMap,
+  PropertyValue,
+  ScaleValue,
+} from '@stitches/react';
 
- type StitchesCSS<T> = CSS<T>;
+type StitchesCSS<T> = CSS<T>;
 
- const utils = {
+const utils = {
   fw: (value: PropertyValue<'fontWeight'>) => ({
     fontWeight: value,
   }),
@@ -69,4 +75,4 @@ import { PropertyValue, ScaleValue, CSS, createStitches, defaultThemeMap } from 
   }),
 };
 
-export {createStitches, defaultThemeMap, utils, type StitchesCSS};
+export { createStitches, defaultThemeMap, utils, type StitchesCSS };

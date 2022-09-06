@@ -4,40 +4,79 @@
     "node": true,
     "es2021": true
   },
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "simple-import-sort",
+    "import",
+    "react",
+    "react-hooks",
+    "eslint-plugin-prettier"
+  ],
   "extends": [
+    "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
-    "standard-with-typescript",
     "eslint-config-prettier",
     "prettier"
   ],
   "parserOptions": {
     "ecmaVersion": "latest",
-    "sourceType": "module"
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
-  "plugins": ["react", "react-hooks", "eslint-plugin-prettier"],
   "rules": {
     "prettier/prettier": "error",
     "camelcase": "off",
     "import/prefer-default-export": "off",
+    "@typescript-eslint/explicit-member-accessibility": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-parameter-properties": "off",
+    "@typescript-eslint/camelcase": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/no-angle-bracket-type-assertion": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "comma-dangle": ["error", "always-multiline"],
+    "eol-last": ["error", "always"],
+    "max-len": [
+      "error",
+      {
+        "code": 100,
+        "ignoreComments": false,
+        "ignoreUrls": true
+      }
+    ],
+    "semi": 2,
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": "*", "next": "return" }
+    ],
+    "simple-import-sort/imports": "error",
+    "import/newline-after-import": ["error", { "count": 1 }],
+    "no-multiple-empty-lines": ["error", { "max": 1 }],
+    "comma-spacing": ["error", { "before": false, "after": true }],
+    "object-curly-spacing": ["error", "always", { "objectsInObjects": false }],
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "never",
+        "named": "never",
+        "asyncArrow": "always"
+      }
+    ],
+    "no-multi-spaces": ["error", { "ignoreEOLComments": true }],
     "react/prop-types": "off",
     "react/jsx-filename-extension": "off",
     "react/jsx-props-no-spreading": "off",
     "react/no-unused-prop-types": "off",
     "react/react-in-jsx-scope": "off",
     "react/require-default-props": "off",
-    "import/extensions": [
-      "error",
-      "ignorePackages",
-      {
-        "ts": "never",
-        "tsx": "never",
-        "js": "never",
-        "jsx": "never"
-      }
-    ],
     "quotes": "off",
     "jsx-a11y/anchor-is-valid": [
-      "error",
+      "off",
       {
         "components": ["Link"],
         "specialLink": ["hrefLeft", "hrefRight"],
@@ -45,6 +84,7 @@
       }
     ]
   },
+
   "overrides": [
     {
       "files": "**/*.+(ts|tsx)",
@@ -60,7 +100,7 @@
         "@typescript-eslint/no-var-requires": "off",
         "@typescript-eslint/quotes": [
           2,
-          "backtick",
+          "single",
           {
             "avoidEscape": true
           }
@@ -68,6 +108,7 @@
       }
     }
   ],
+
   "settings": {
     "import/resolver": {
       "typescript": {

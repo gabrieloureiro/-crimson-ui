@@ -1,6 +1,6 @@
-import React, { FC, ComponentProps } from 'react';
 import { Heading as HeadingCSS } from '@crimson-ui/styles';
-import { styled, CSS } from '@crimson-ui/web';
+import { CSS, styled } from '@crimson-ui/web';
+import { ComponentProps, FC } from 'react';
 
 const StyledHeading = styled('span', HeadingCSS);
 

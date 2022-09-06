@@ -1,6 +1,6 @@
-import React, { FC, ComponentProps } from 'react';
 import { Text as TextCSS } from '@crimson-ui/styles';
-import { styled, CSS } from '@crimson-ui/web';
+import { CSS, styled } from '@crimson-ui/web';
+import React, { ComponentProps, FC } from 'react';
 
 const StyledText = styled('span', TextCSS);
 

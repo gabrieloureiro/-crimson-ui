@@ -1,5 +1,5 @@
-import React, { FC, ComponentProps } from 'react';
 import { styled } from '@crimson-ui/web';
+import React, { ComponentProps, FC } from 'react';
 
 const StyledCenter = styled('div', {
   flex: 1,

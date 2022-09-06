@@ -1,8 +1,22 @@
 {
   "name": "@crimson-ui/colors",
   "version": "1.4.5",
-  "main": "src/index.ts",
   "author": "Gabriel Loureiro <gabrieloureirof@gmail.com>",
   "license": "MIT",
-  "gitHead": "aab10a79591fec5f83c3f36647b5a2158ea187a2"
+  "scripts": {
+    "build": "rm -rf dist && npm run build:typings && cross-env NODE_ENV=production INPUT_FILE=./src/index.ts rollup -c ../../rollup.config.js",
+    "build:typings": "cross-env ttsc -p ./tsconfig.json --declarationDir dist"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "homepage": "https://github.com/gabrieloureiro/crimson-ui/tree/master/packages/colors/",
+  "bugs": {
+    "url": "https://github.com/gabrieloureiro/crimson-ui/issues"
+  },
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gabrieloureiro/crimson-ui.git",
+    "directory": "packages/colors"
+  }
 }
