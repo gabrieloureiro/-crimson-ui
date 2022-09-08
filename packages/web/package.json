@@ -1,6 +1,6 @@
 {
   "name": "@crimson-ui/web",
-  "version": "1.4.5",
+  "version": "1.4.6",
   "author": "Gabriel Loureiro <gabrieloureirof@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -18,7 +18,7 @@
     "directory": "packages/colors"
   },
   "dependencies": {
-    "@crimson-ui/colors": "^1.4.5",
+    "@crimson-ui/colors": "^1.4.6",
     "@stitches/react": "^1.2.8"
   }
 }

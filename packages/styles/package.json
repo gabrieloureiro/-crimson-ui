@@ -1,6 +1,6 @@
 {
   "name": "@crimson-ui/styles",
-  "version": "1.4.5",
+  "version": "1.4.6",
   "author": "Gabriel Loureiro <gabrieloureirof@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -18,6 +18,6 @@
     "directory": "packages/styles"
   },
   "dependencies": {
-    "@crimson-ui/web": "^1.4.5"
+    "@crimson-ui/web": "^1.4.6"
   }
 }
