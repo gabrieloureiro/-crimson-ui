@@ -1,78 +1,71 @@
-import {
-  createStitches,
-  CSS,
-  defaultThemeMap,
-  PropertyValue,
-  ScaleValue,
-} from '@stitches/react';
-
-type StitchesCSS<T> = CSS<T>;
+import type * as Stitches from '@stitches/react';
+import { createStitches, defaultThemeMap } from '@stitches/react';
 
 const utils = {
-  fw: (value: PropertyValue<'fontWeight'>) => ({
+  fw: (value: Stitches.PropertyValue<'fontWeight'>) => ({
     fontWeight: value,
   }),
-  lh: (value: PropertyValue<'lineHeight'>) => ({
+  lh: (value: Stitches.PropertyValue<'lineHeight'>) => ({
     lineHeight: value,
   }),
 
-  justify: (value: PropertyValue<'justifyContent'>) => ({
+  justify: (value: Stitches.PropertyValue<'justifyContent'>) => ({
     justifyContent: value,
   }),
-  align: (value: PropertyValue<'alignItems'>) => ({
+  align: (value: Stitches.PropertyValue<'alignItems'>) => ({
     alignItems: value,
   }),
-  flexDir: (value: PropertyValue<'flexDirection'>) => ({
+  flexDir: (value: Stitches.PropertyValue<'flexDirection'>) => ({
     flexDirection: value,
   }),
 
-  p: (value: ScaleValue<'space'>) => ({
+  p: (value: Stitches.ScaleValue<'space'>) => ({
     padding: value,
   }),
-  pt: (value: ScaleValue<'space'>) => ({
+  pt: (value: Stitches.ScaleValue<'space'>) => ({
     paddingTop: value,
   }),
-  pr: (value: ScaleValue<'space'>) => ({
+  pr: (value: Stitches.ScaleValue<'space'>) => ({
     paddingRight: value,
   }),
-  pb: (value: ScaleValue<'space'>) => ({
+  pb: (value: Stitches.ScaleValue<'space'>) => ({
     paddingBottom: value,
   }),
-  pl: (value: ScaleValue<'space'>) => ({
+  pl: (value: Stitches.ScaleValue<'space'>) => ({
     paddingLeft: value,
   }),
-  px: (value: ScaleValue<'space'>) => ({
+  px: (value: Stitches.ScaleValue<'space'>) => ({
     paddingLeft: value,
     paddingRight: value,
   }),
-  py: (value: ScaleValue<'space'>) => ({
+  py: (value: Stitches.ScaleValue<'space'>) => ({
     paddingTop: value,
     paddingBottom: value,
   }),
 
-  m: (value: ScaleValue<'space'>) => ({
+  m: (value: Stitches.ScaleValue<'space'>) => ({
     margin: value,
   }),
-  mt: (value: ScaleValue<'space'>) => ({
+  mt: (value: Stitches.ScaleValue<'space'>) => ({
     marginTop: value,
   }),
-  mr: (value: ScaleValue<'space'>) => ({
+  mr: (value: Stitches.ScaleValue<'space'>) => ({
     marginRight: value,
   }),
-  mb: (value: ScaleValue<'space'>) => ({
+  mb: (value: Stitches.ScaleValue<'space'>) => ({
     marginBottom: value,
   }),
-  ml: (value: ScaleValue<'space'>) => ({
+  ml: (value: Stitches.ScaleValue<'space'>) => ({
     marginLeft: value,
   }),
-  mx: (value: ScaleValue<'space'>) => ({
+  mx: (value: Stitches.ScaleValue<'space'>) => ({
     marginLeft: value,
     marginRight: value,
   }),
-  my: (value: ScaleValue<'space'>) => ({
+  my: (value: Stitches.ScaleValue<'space'>) => ({
     marginTop: value,
     marginBottom: value,
   }),
 };
 
-export { createStitches, defaultThemeMap, utils, type StitchesCSS };
+export { createStitches, defaultThemeMap, utils, type Stitches };

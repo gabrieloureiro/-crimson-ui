@@ -17,6 +17,12 @@
     "type": "git",
     "url": "https://github.com/gabrieloureiro/crimson-ui.git"
   },
+  "dependencies": {
+    "@crimson-ui/colors": "*",
+    "@crimson-ui/react": "*",
+    "@crimson-ui/styles": "*",
+    "@crimson-ui/web": "*"
+  },
   "devDependencies": {
     "@babel/cli": "7.18.10",
     "@babel/core": "7.19.0",
@@ -55,7 +61,7 @@
     "semantic-release-monorepo": "^7.0.5",
     "ts-node": "^10.9.1",
     "ttypescript": "^1.5.13",
-    "typescript": "4.8.2",
+    "typescript": "^4.8.2",
     "typescript-transform-paths": "^3.3.1",
     "webpack": "^5.74.0"
   },
@@ -64,7 +70,7 @@
     "build-storybook": "lerna run build-storybook --scope=@crimson-ui/react",
     "lint": "eslint ./packages --ext ts --ext tsx",
     "build": "lerna run build",
-    "publish": "lerna publish from-package --y --no-verify-access",
+    "publish": "lerna publish from-package",
     "semantic-release": "lerna exec --concurrency 1 -- semantic-release -e semantic-release-monorepo --tag-format='${LERNA_PACKAGE_NAME}-v\\${version}'"
   }
 }

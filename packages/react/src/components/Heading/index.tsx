@@ -2,7 +2,7 @@ import { Heading as HeadingCSS } from '@crimson-ui/styles';
 import { CSS, styled } from '@crimson-ui/web';
 import { ComponentProps, FC } from 'react';
 
-const StyledHeading = styled('span', HeadingCSS);
+const StyledHeading = styled('h2', HeadingCSS);
 
 export type HeadingProps = CSS &
   ComponentProps<typeof StyledHeading> & {

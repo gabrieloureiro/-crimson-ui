@@ -1,6 +1,6 @@
 import { colors } from '@crimson-ui/colors';
 
-import { createStitches, defaultThemeMap, StitchesCSS, utils } from './utils';
+import { createStitches, defaultThemeMap, Stitches, utils } from './utils';
 
 export const {
   styled,
@@ -115,4 +115,4 @@ export const {
   utils,
 });
 
-export type CSS = StitchesCSS<typeof config>;
+export type CSS = Stitches.CSS<typeof config>;
