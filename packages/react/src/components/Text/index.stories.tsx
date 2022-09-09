@@ -21,7 +21,7 @@ export default {
   } as TextProps,
 } as Meta;
 
-const Template: Story<TextProps> = (args) => (
+const Template: Story<Omit<TextProps, 'ref'>> = (args) => (
   <CenterStoryComponent>
     <TextReactComponent css={{ m: '$auto' }} {...args} />
   </CenterStoryComponent>

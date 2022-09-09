@@ -2,7 +2,6 @@ import { Args, ArgTypes } from '@storybook/react';
 
 export const disabledArgTypes: Partial<ArgTypes<Args>> = {
   css: { table: { disable: true } },
-  ref: { table: { disable: true } },
   fw: { table: { disable: true } },
   lh: { table: { disable: true } },
   justify: { table: { disable: true } },

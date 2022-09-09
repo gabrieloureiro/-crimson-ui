@@ -21,7 +21,7 @@ export default {
   } as HeadingProps,
 } as Meta;
 
-const Template: Story<HeadingProps> = (args) => (
+const Template: Story<Omit<HeadingProps, 'ref'>> = (args) => (
   <CenterStoryComponent>
     <HeadingReactComponent css={{ m: '$auto' }} {...args} />
   </CenterStoryComponent>

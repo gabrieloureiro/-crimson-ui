@@ -16,5 +16,6 @@
     "type": "git",
     "url": "https://github.com/gabrieloureiro/crimson-ui.git",
     "directory": "packages/colors"
-  }
+  },
+  "gitHead": "c7d28431c13439888331249beab78a806e439bfd"
 }

@@ -20,5 +20,6 @@
   "dependencies": {
     "@crimson-ui/colors": "^1.4.6",
     "@stitches/react": "^1.2.8"
-  }
+  },
+  "gitHead": "c7d28431c13439888331249beab78a806e439bfd"
 }

@@ -19,5 +19,6 @@
   },
   "dependencies": {
     "@crimson-ui/web": "^1.4.6"
-  }
+  },
+  "gitHead": "c7d28431c13439888331249beab78a806e439bfd"
 }
