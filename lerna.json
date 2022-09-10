@@ -1,15 +1,19 @@
 {
   "npmClient": "yarn",
   "packages": ["packages/*"],
+  "ignoreChanges": ["**/__tests__/**", "examples/*", "**/*.md", "**/*.mdx"],
   "version": "independent",
   "useWorkspaces": true,
   "command": {
     "publish": {
-      "registry": "https://npm.pkg.github.com/gabrieloureiro",
       "message": "chore(publish): 🤖 update packages",
       "verifyAccess": false,
       "yes": true,
       "forcePublish": true
     }
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/gabrieloureiro",
+    "access": "public"
   }
 }

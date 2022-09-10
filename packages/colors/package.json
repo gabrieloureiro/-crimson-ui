@@ -4,10 +4,13 @@
   "author": "Gabriel Loureiro <gabrieloureirof@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf dist && npm run build:typings && cross-env NODE_ENV=production INPUT_FILE=./src/index.ts rollup -c ../../rollup.config.js",
-    "build:typings": "cross-env ttsc -p ./tsconfig.json --declarationDir dist"
+    "dev": "rollup --config",
+    "build": "cross-env NODE_ENV=production rollup --config --sourcemaps --watch"
   },
-  "main": "src/index.ts",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
   "homepage": "https://github.com/gabrieloureiro/crimson-ui/tree/master/packages/colors/",
   "bugs": {
     "url": "https://github.com/gabrieloureiro/crimson-ui/issues"

@@ -1,6 +1,6 @@
 import { Heading as HeadingCSS } from '@crimson-ui/styles';
 import { CSS, styled } from '@crimson-ui/web';
-import { ComponentProps, ElementRef, forwardRef } from 'react';
+import React, { ComponentProps, ElementRef, forwardRef } from 'react';
 
 const StyledHeading = styled('h2', HeadingCSS);
 

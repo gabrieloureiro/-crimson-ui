@@ -1,7 +1,7 @@
 import { Meta, Story } from '@storybook/react';
 import React from 'react';
+import { CenterStoryComponent, disabledArgTypes } from 'utils';
 
-import { CenterStoryComponent, disabledArgTypes } from '../../helpers';
 import { Text as TextReactComponent, TextProps } from '.';
 
 export default {

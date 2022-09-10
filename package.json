@@ -1,23 +1,31 @@
 {
   "name": "crimson-ui",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "author": "Gabriel Loureiro <gabrieloureirof@gmail.com>",
   "license": "MIT",
-  "main": "README.md",
-  "private": false,
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gabrieloureiro/crimson-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gabrieloureiro/crimson-ui/issues"
+  },
   "workspaces": {
     "packages": [
       "packages/*"
     ]
   },
-  "bugs": {
-    "url": "https://github.com/gabrieloureiro/crimson-ui/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gabrieloureiro/crimson-ui.git"
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
   },
   "devDependencies": {
+    "@rollup/plugin-babel": "5.3.1",
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-node-resolve": "^14.0.1",
+    "@rollup/plugin-replace": "^4.0.0",
     "@babel/cli": "7.18.10",
     "@babel/core": "7.19.0",
     "@babel/plugin-transform-runtime": "^7.18.10",
@@ -26,9 +34,6 @@
     "@babel/runtime": "7.19.0",
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
-    "@rollup/plugin-babel": "5.3.1",
-    "@rollup/plugin-commonjs": "22.0.2",
-    "@rollup/plugin-node-resolve": "^14.0.0",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^8.0.6",
     "@types/jest": "29.0.0",
@@ -62,9 +67,10 @@
   "scripts": {
     "storybook": "lerna run storybook --scope=@crimson-ui/react",
     "build-storybook": "lerna run build-storybook --scope=@crimson-ui/react",
-    "lint": "eslint ./packages --ext ts --ext tsx",
+    "dev": "lerna run --parallel dev",
     "build": "lerna run build",
-    "publish": "lerna publish from-package",
-    "semantic-release": "lerna exec --concurrency 1 -- semantic-release -e semantic-release-monorepo --tag-format='${LERNA_PACKAGE_NAME}-v\\${version}'"
+    "test": "lerna run --parallel test",
+    "lint": "lerna run --parallel lint",
+    "release": "lerna publish"
   }
 }
