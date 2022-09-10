@@ -15,9 +15,6 @@ const plugins = [
   }),
   typescript({
     useTsconfigDeclarationDir: true,
-    tsconfigOverride: {
-      exclude: ['**/*.stories.*'],
-    },
   }),
   replace({
     'process.env.NODE_ENV': JSON.stringify(env),
@@ -32,6 +29,6 @@ export default {
     { file: pkg.main, format: 'cjs' },
     { file: pkg.module, format: 'es' },
   ],
-  external: ['react', 'react-dom', 'react-icons', '@crimson-ui/colors'],
+  external: ['@crimson-ui/web'],
   plugins: [...plugins],
 };

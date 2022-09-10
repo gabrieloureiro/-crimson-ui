@@ -37,7 +37,13 @@
   "peerDependencies": {
     "react": "^>=18.2.0",
     "react-dom": "^>=18.2.0",
-    "react-icons": "^>=4.4.0"
+    "react-icons": "^>=4.4.0",
+    "rollup": "^2.79.0",
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-node-resolve": "^14.0.1",
+    "@rollup/plugin-replace": "^4.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.33.0"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -47,10 +53,6 @@
     "@crimson-ui/web": "*"
   },
   "devDependencies": {
-    "tsdx": "^0.14.1",
-    "rollup": "^2.79.0",
-    "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-typescript2": "^0.33.0",
     "@storybook/addon-actions": "^6.5.10",
     "@storybook/addon-essentials": "^6.5.10",
     "@storybook/addon-interactions": "^6.5.10",
@@ -60,7 +62,7 @@
     "@storybook/manager-webpack4": "^6.5.10",
     "@storybook/react": "^6.5.10",
     "@storybook/testing-library": "^0.0.13",
-    "@types/react": "^18.0.17"
+    "@types/react": "^18.0.18"
   },
   "gitHead": "c7d28431c13439888331249beab78a806e439bfd"
 }
