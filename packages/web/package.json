@@ -3,19 +3,29 @@
   "version": "1.4.6",
   "author": "Gabriel Loureiro <gabrieloureirof@gmail.com>",
   "license": "MIT",
-  "main": "src/index.ts",
-  "scripts": {
-    "build": "rm -rf dist && npm run build:typings && cross-env NODE_ENV=production INPUT_FILE=./src/index.ts rollup -c ../../rollup.config.js",
-    "build:typings": "cross-env ttsc -p ./tsconfig.json --declarationDir dist"
-  },
-  "homepage": "https://github.com/gabrieloureiro/crimson-ui/tree/master/packages/colors/",
-  "bugs": {
-    "url": "https://github.com/gabrieloureiro/crimson-ui/issues"
-  },
+  "source": "src/index.ts",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/gabrieloureiro/crimson-ui.git",
-    "directory": "packages/colors"
+    "directory": "packages/web"
+  },
+  "homepage": "https://github.com/gabrieloureiro/crimson-ui/tree/master/packages/web/",
+  "bugs": {
+    "url": "https://github.com/gabrieloureiro/crimson-ui/issues"
+  },
+  "engines": {
+    "node": ">=16.17.0"
+  },
+  "scripts": {
+    "dev": "rollup --config",
+    "build": "rm -rf dist && cross-env NODE_ENV=production rollup --config --sourcemaps --watch",
+    "lint": "eslint --ext .ts,tsx ./src/** "
   },
   "dependencies": {
     "@crimson-ui/colors": "*",

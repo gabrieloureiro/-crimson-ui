@@ -5,12 +5,15 @@
   "license": "MIT",
   "scripts": {
     "dev": "rollup --config",
-    "build": "cross-env NODE_ENV=production rollup --config --sourcemaps --watch"
+    "build": "rm -rf dist && cross-env NODE_ENV=production rollup --config --sourcemaps --watch"
   },
   "source": "src/index.ts",
-  "main": "dist/index.js",
+  "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "homepage": "https://github.com/gabrieloureiro/crimson-ui/tree/master/packages/colors/",
   "bugs": {
     "url": "https://github.com/gabrieloureiro/crimson-ui/issues"

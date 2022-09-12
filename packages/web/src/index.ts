@@ -1,8 +1,10 @@
 import { colors } from '@crimson-ui/colors';
 
-import { createStitches, defaultThemeMap, Stitches, utils } from './utils';
+import { createStitches, defaultThemeMap, StitchesCSS, utils } from './utils';
 
-export const {
+type CSS = StitchesCSS<typeof config>;
+
+const {
   styled,
   css,
   globalCss,
@@ -115,4 +117,14 @@ export const {
   utils,
 });
 
-export type CSS = Stitches.CSS<typeof config>;
+export {
+  styled,
+  css,
+  globalCss,
+  keyframes,
+  getCssText,
+  theme,
+  createTheme,
+  config,
+  type CSS,
+};

@@ -1,6 +1,6 @@
 {
   "include": ["src", "**/*.ts"],
-  "exclude": ["node_modules", "**/dist/**", "dist/*.js"],
+  // "exclude": ["node_modules", "**/dist/**", "dist/*.js"],
   "compilerOptions": {
     "target": "es6",
     "module": "esnext",
@@ -10,7 +10,6 @@
     "isolatedModules": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "incremental": true,
     "noEmit": true,
     "allowJs": true,
     "noImplicitAny": true,
@@ -24,7 +23,8 @@
       "*": ["src/*"]
     },
     "declarationDir": "dist/types",
-    "outDir": "dist",
-    "typeRoots": ["./**/types", "./**/@types", "../../node_modules/@types"]
+    "typeRoots": ["dist/types"],
+    "types": ["node"],
+    "outDir": "dist/esm"
   }
 }

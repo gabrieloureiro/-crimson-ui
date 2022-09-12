@@ -24,7 +24,7 @@
   },
   "scripts": {
     "dev": "rollup --config",
-    "build": "cross-env NODE_ENV=production rollup --config --sourcemaps --watch",
+    "build": "rm -rf dist && cross-env NODE_ENV=production rollup --config --sourcemaps --watch",
     "lint": "eslint --ext .ts,tsx ./src/** "
   },
   "dependencies": {

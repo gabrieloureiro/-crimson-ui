@@ -26,12 +26,23 @@ const plugins = [
   env === 'production' && terser(),
 ];
 
-export default {
-  input: 'src/index.ts',
-  output: [
-    { file: pkg.main, format: 'cjs' },
-    { file: pkg.module, format: 'es' },
-  ],
-  external: ['react', 'react-dom', 'react-icons', '@crimson-ui/colors'],
-  plugins: [...plugins],
-};
+const config = [
+  {
+    input: 'src/index.ts',
+    output: [
+      { file: pkg.main, format: 'cjs' },
+      { file: pkg.module, format: 'es' },
+    ],
+    external: [
+      'react',
+      'react-dom',
+      'react-icons',
+      '@stitches/react',
+      '@crimson-ui/web',
+      '@crimson-ui/styles',
+    ],
+    plugins: [...plugins],
+  },
+];
+
+export default config;

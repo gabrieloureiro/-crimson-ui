@@ -23,7 +23,6 @@ const plugins = [
   }),
   env === 'production' && terser(),
 ];
-
 const config = [
   {
     input: 'src/index.ts',
@@ -31,6 +30,7 @@ const config = [
       { file: pkg.main, format: 'cjs' },
       { file: pkg.module, format: 'es' },
     ],
+    // external: ['@stitches/react', '@crimson-ui/colors'],
     plugins: [...plugins],
   },
 ];

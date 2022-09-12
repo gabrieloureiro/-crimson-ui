@@ -16,6 +16,7 @@ const plugins = [
   }),
   typescript({
     useTsconfigDeclarationDir: true,
+    tsconfig: './tsconfig.json',
   }),
   replace({
     'process.env.NODE_ENV': JSON.stringify(env),
@@ -24,8 +25,15 @@ const plugins = [
   env === 'production' && terser(),
 ];
 
-export default {
-  input: 'src/index.ts',
-  output: { file: pkg.main, format: 'es' },
-  plugins: [...plugins],
-};
+const config = [
+  {
+    input: 'src/index.ts',
+    output: [
+      { file: pkg.main, format: 'cjs' },
+      { file: pkg.module, format: 'es' },
+    ],
+    plugins: [...plugins],
+  },
+];
+
+export default config;
