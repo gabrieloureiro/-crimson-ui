@@ -11,9 +11,5 @@
       "yes": true,
       "forcePublish": true
     }
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/gabrieloureiro",
-    "access": "public"
   }
 }
