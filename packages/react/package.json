@@ -23,16 +23,11 @@
     "node": ">=16.17.0"
   },
   "scripts": {
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
     "dev": "rollup --config",
-    "build": "rm -rf dist && cross-env NODE_ENV=production rollup --config --sourcemaps --watch",
-    "lint": "eslint --ext .ts,tsx ./src/** "
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn lint"
-    }
+    "build": "cross-env NODE_ENV=production rollup --config --sourcemaps --watch",
+    "lint": "eslint --ext .ts,tsx ./src/** ",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "peerDependencies": {
     "react": "^>=18.2.0",

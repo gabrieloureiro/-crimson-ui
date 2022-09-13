@@ -3,10 +3,6 @@
   "version": "1.4.6",
   "author": "Gabriel Loureiro <gabrieloureirof@gmail.com>",
   "license": "MIT",
-  "scripts": {
-    "dev": "rollup --config",
-    "build": "rm -rf dist && cross-env NODE_ENV=production rollup --config --sourcemaps --watch"
-  },
   "source": "src/index.ts",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -14,14 +10,18 @@
   "files": [
     "dist"
   ],
-  "homepage": "https://github.com/gabrieloureiro/crimson-ui/tree/master/packages/colors/",
-  "bugs": {
-    "url": "https://github.com/gabrieloureiro/crimson-ui/issues"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/gabrieloureiro/crimson-ui.git",
     "directory": "packages/colors"
+  },
+  "homepage": "https://github.com/gabrieloureiro/crimson-ui/tree/master/packages/colors/",
+  "bugs": {
+    "url": "https://github.com/gabrieloureiro/crimson-ui/issues"
+  },
+  "scripts": {
+    "dev": "rollup --config",
+    "build": "cross-env NODE_ENV=production rollup --config --sourcemaps --watch"
   },
   "gitHead": "c7d28431c13439888331249beab78a806e439bfd"
 }
