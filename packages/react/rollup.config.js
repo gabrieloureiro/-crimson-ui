@@ -33,14 +33,6 @@ const config = [
       { file: pkg.main, format: 'cjs' },
       { file: pkg.module, format: 'es' },
     ],
-    external: [
-      'react',
-      'react-dom',
-      'react-icons',
-      '@stitches/react',
-      '@crimson-ui/web',
-      '@crimson-ui/styles',
-    ],
     plugins: [...plugins],
   },
 ];
