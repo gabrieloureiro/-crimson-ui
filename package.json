@@ -1,6 +1,6 @@
 {
   "name": "crimson-ui",
-  "version": "0.0.9",
+  "version": "0.0.13",
   "author": "Gabriel Loureiro <gabrieloureirof@gmail.com>",
   "license": "MIT",
   "private": false,
@@ -30,7 +30,7 @@
     "dev": "lerna run dev --include-dependencies",
     "build": "lerna run build --include-dependencies",
     "test": "lerna run --parallel test",
-    "publish": "lerna publish",
+    "publish": "HUSKY_SKIP_HOOKS=1 lerna publish",
     "storybook": "lerna run storybook --scope=@crimson-ui/react",
     "build-storybook": "lerna run build-storybook --scope=@crimson-ui/react",
     "clean": "lerna clean -y",

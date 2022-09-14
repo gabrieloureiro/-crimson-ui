@@ -1,20 +1,15 @@
 {
   "npmClient": "yarn",
   "packages": ["packages/*"],
-  "ignoreChanges": [
-    "**/__tests__/**",
-    "examples/*",
-    "**/*.md",
-    "**/*.mdx",
-    "package.json"
-  ],
+  "ignoreChanges": ["**/__tests__/**", "examples/*", "**/*.md", "**/*.mdx"],
   "version": "independent",
   "useWorkspaces": true,
   "command": {
     "publish": {
       "message": "chore(lerna): 🤖 update packages",
       "verifyAccess": false,
-      "yes": true
+      "yes": true,
+      "forcePublish": true
     }
   }
 }
