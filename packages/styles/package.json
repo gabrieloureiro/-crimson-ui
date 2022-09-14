@@ -1,6 +1,6 @@
 {
   "name": "@crimson-ui/styles",
-  "version": "1.4.6",
+  "version": "1.5.0",
   "author": "Gabriel Loureiro <gabrieloureirof@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/gabrieloureiro/crimson-ui/tree/master/packages/styles/",
@@ -28,7 +28,7 @@
     "lint": "eslint --ext .ts,tsx ./src/** "
   },
   "dependencies": {
-    "@crimson-ui/web": "*"
+    "@crimson-ui/web": "^1.5.0"
   },
   "gitHead": "c7d28431c13439888331249beab78a806e439bfd"
 }

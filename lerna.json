@@ -6,10 +6,9 @@
   "useWorkspaces": true,
   "command": {
     "publish": {
-      "message": "chore(publish): 🤖 update packages",
+      "message": "chore(lerna): 🤖 update packages",
       "verifyAccess": false,
-      "yes": true,
-      "forcePublish": true
+      "yes": true
     }
   }
 }

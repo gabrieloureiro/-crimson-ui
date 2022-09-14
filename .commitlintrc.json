@@ -2,6 +2,10 @@
   "extends": ["@commitlint/config-conventional"],
   "rules": {
     "header-max-length": [0, "always", 100],
-    "scope-enum": [2, "always", ["web", "colors", "react", "styles", "config"]]
+    "scope-enum": [
+      2,
+      "always",
+      ["web", "colors", "react", "styles", "config", "lerna"]
+    ]
   }
 }

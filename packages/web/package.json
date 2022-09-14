@@ -1,6 +1,6 @@
 {
   "name": "@crimson-ui/web",
-  "version": "1.4.6",
+  "version": "1.5.0",
   "author": "Gabriel Loureiro <gabrieloureirof@gmail.com>",
   "license": "MIT",
   "source": "src/index.ts",
@@ -28,7 +28,7 @@
     "lint": "eslint --ext .ts,tsx ./src/** "
   },
   "dependencies": {
-    "@crimson-ui/colors": "*",
+    "@crimson-ui/colors": "^1.5.0",
     "@stitches/react": "^1.2.8"
   },
   "gitHead": "c7d28431c13439888331249beab78a806e439bfd"
