@@ -1,6 +1,6 @@
 {
   "name": "@crimson-ui/react",
-  "version": "1.5.0",
+  "version": "1.5.3",
   "author": "Gabriel Loureiro <gabrieloureirof@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/gabrieloureiro/crimson-ui/tree/master/packages/react/",
@@ -35,8 +35,8 @@
     "react-icons": "^>=4.4.0"
   },
   "dependencies": {
-    "@crimson-ui/styles": "^1.5.0",
-    "@crimson-ui/web": "^1.5.0",
+    "@crimson-ui/styles": "^1.5.3",
+    "@crimson-ui/web": "^1.5.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0"
