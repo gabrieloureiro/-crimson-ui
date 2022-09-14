@@ -6,7 +6,7 @@ const StyledText = styled('p', TextCSS);
 
 export type TextProps = CSS &
   ComponentProps<typeof StyledText> & {
-    as?: 'p' | 'span';
+    as?: 'p' | 'span' | 'strong';
   };
 
 export const Text = forwardRef<ElementRef<typeof StyledText>, TextProps>(
