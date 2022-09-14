@@ -1,6 +1,6 @@
 {
   "name": "@crimson-ui/colors",
-  "version": "1.5.4",
+  "version": "1.5.6",
   "author": "Gabriel Loureiro <gabrieloureirof@gmail.com>",
   "license": "MIT",
   "source": "src/index.ts",
@@ -23,5 +23,5 @@
     "dev": "rollup --config",
     "build": "cross-env NODE_ENV=production rollup --config --sourcemaps --watch"
   },
-  "gitHead": "414f0061928eff6c9edd7e3f9fd7bc71238a5488"
+  "gitHead": "af6742b2f5e845ca222dd8daba9056711a74e192"
 }
