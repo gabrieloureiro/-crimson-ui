@@ -6,7 +6,7 @@
     "examples/*",
     "**/*.md",
     "**/*.mdx",
-    "packages.json"
+    "package.json"
   ],
   "version": "independent",
   "useWorkspaces": true,
