@@ -18,32 +18,32 @@
   },
   "config": {
     "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn lint",
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "path": "./node_modules/cz-conventional-changelog"
     }
   },
   "lint-staged": {
-    "**/*.+(ts|tsx|js)": [
-      "eslint --fix",
+    "**/*.{ts,tsx,js}": [
+      "eslint --fix --ext",
       "git add"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   },
   "scripts": {
     "dev": "lerna run dev --include-dependencies",
     "build": "lerna run build --include-dependencies",
     "test": "lerna run --parallel test",
-    "lint": "lerna run --parallel lint",
     "publish": "lerna publish",
     "storybook": "lerna run storybook --scope=@crimson-ui/react",
     "build-storybook": "lerna run build-storybook --scope=@crimson-ui/react",
     "clean": "lerna clean -y",
-    "clear:dist": "rm -rf packages/**/dist && yarn clean"
+    "clear:dist": "rm -rf packages/**/dist && yarn clean",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
