@@ -1,7 +1,13 @@
 {
   "npmClient": "yarn",
   "packages": ["packages/*"],
-  "ignoreChanges": ["**/__tests__/**", "examples/*", "**/*.md", "**/*.mdx"],
+  "ignoreChanges": [
+    "**/__tests__/**",
+    "examples/*",
+    "**/*.md",
+    "**/*.mdx",
+    "./packages.json"
+  ],
   "version": "independent",
   "useWorkspaces": true,
   "command": {
