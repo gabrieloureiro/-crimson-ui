@@ -23,5 +23,5 @@
     "dev": "rollup --config",
     "build": "cross-env NODE_ENV=production rollup --config --sourcemaps"
   },
-  "gitHead": "741ee9a67a3cff301c99297cd65d67611aa4cdac"
+  "gitHead": "56c99ea7e607c85af086b5befbf5d17f0e763d20"
 }
