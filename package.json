@@ -3,7 +3,7 @@
   "version": "0.0.16",
   "author": "Gabriel Loureiro <gabrieloureirof@gmail.com>",
   "license": "MIT",
-  "private": false,
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/gabrieloureiro/crimson-ui.git"
@@ -26,7 +26,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-lerna-changelog"
+      "path": "./node_modules/cz-conventional-changelog"
     }
   },
   "scripts": {
@@ -51,7 +51,7 @@
     "babel-loader": "8.2.5",
     "commitizen": "^4.2.5",
     "cross-env": "7.0.3",
-    "cz-lerna-changelog": "^2.0.3",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "8.23.1",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "2.26.0",
