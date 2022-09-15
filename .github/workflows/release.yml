@@ -28,7 +28,7 @@ jobs:
 
       - name: Publish at NPM
         run: |
-          npm install
-          npm run publish
+          yarn --frozen-lockfile
+          yarn publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

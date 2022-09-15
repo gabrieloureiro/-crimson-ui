@@ -3,7 +3,7 @@
   "version": "0.0.18",
   "author": "Gabriel Loureiro <gabrieloureirof@gmail.com>",
   "license": "MIT",
-  "private": false,
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/gabrieloureiro/crimson-ui.git"
