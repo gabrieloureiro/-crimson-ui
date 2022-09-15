@@ -4,9 +4,15 @@ on:
   push:
     branches:
       - master
-  paths:
-    - 'packages/styles/**'
-    - 'packages/web/**'
+    paths:
+      - 'packages/styles/**'
+      - 'packages/web/**'
+  pull_request:
+    branches:
+      - master
+    paths:
+      - 'packages/styles/**'
+      - 'packages/web/**'
 
 jobs:
   build:

@@ -4,8 +4,13 @@ on:
   push:
     branches:
       - master
-  paths:
-    - 'packages/colors/**'
+    paths:
+      - 'packages/colors/**'
+  pull_request:
+    branches:
+      - master
+    paths:
+      - 'packages/colors/**'
 
 jobs:
   build:
