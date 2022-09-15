@@ -1,14 +1,14 @@
 import { Meta, Story } from '@storybook/react';
 import React from 'react';
-import { CenterStoryComponent, disabledArgTypes } from 'utils';
 
+import { CenterStoryComponent } from '../../../.storybook/Center';
 import { Text as TextReactComponent, TextProps } from '.';
 
 export default {
   title: 'Typography/Text',
   component: TextReactComponent,
   argTypes: {
-    ...disabledArgTypes,
+    css: { table: { disable: true } },
     children: { control: { type: 'text' } },
     size: {
       options: ['xs', 'sm', 'md', 'lg', 'xl'],
@@ -23,7 +23,7 @@ export default {
 
 const Template: Story<Omit<TextProps, 'ref'>> = (args) => (
   <CenterStoryComponent>
-    <TextReactComponent css={{ m: '$auto' }} {...args} />
+    <TextReactComponent {...args} />
   </CenterStoryComponent>
 );
 

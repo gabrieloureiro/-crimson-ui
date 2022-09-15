@@ -21,7 +21,7 @@
   },
   "scripts": {
     "dev": "rollup --config",
-    "build": "cross-env NODE_ENV=production rollup --config --sourcemaps --watch"
+    "build": "cross-env NODE_ENV=production rollup --config --sourcemaps"
   },
-  "gitHead": "af6742b2f5e845ca222dd8daba9056711a74e192"
+  "gitHead": "741ee9a67a3cff301c99297cd65d67611aa4cdac"
 }

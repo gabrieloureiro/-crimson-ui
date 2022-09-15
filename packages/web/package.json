@@ -24,12 +24,11 @@
   },
   "scripts": {
     "dev": "rollup --config",
-    "build": "cross-env NODE_ENV=production rollup --config --sourcemaps --watch",
-    "lint": "eslint --ext .ts,tsx ./src/** "
+    "build": "cross-env NODE_ENV=production rollup --config --sourcemaps"
   },
   "dependencies": {
     "@crimson-ui/colors": "^1.5.6",
     "@stitches/react": "^1.2.8"
   },
-  "gitHead": "af6742b2f5e845ca222dd8daba9056711a74e192"
+  "gitHead": "741ee9a67a3cff301c99297cd65d67611aa4cdac"
 }

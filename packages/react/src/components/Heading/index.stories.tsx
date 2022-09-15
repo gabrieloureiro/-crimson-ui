@@ -1,14 +1,14 @@
 import { Meta, Story } from '@storybook/react';
 import React from 'react';
-import { CenterStoryComponent, disabledArgTypes } from 'utils';
 
+import { CenterStoryComponent } from '../../../.storybook/Center';
 import { Heading as HeadingReactComponent, HeadingProps } from '.';
 
 export default {
   title: 'Typography/Heading',
   component: HeadingReactComponent,
   argTypes: {
-    ...disabledArgTypes,
+    css: { table: { disable: true } },
     children: { control: { type: 'text' } },
     size: {
       options: ['sm', 'md', 'lg', 'xl', '2xl'],
@@ -23,7 +23,7 @@ export default {
 
 const Template: Story<Omit<HeadingProps, 'ref'>> = (args) => (
   <CenterStoryComponent>
-    <HeadingReactComponent css={{ m: '$auto' }} {...args} />
+    <HeadingReactComponent {...args} />
   </CenterStoryComponent>
 );
 
