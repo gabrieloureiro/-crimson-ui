@@ -26,7 +26,7 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-      - name: Checkout
+      - name: checkout
         uses: actions/checkout@v2
 
       - name: Use Node.js ${{ matrix.node-version }}
