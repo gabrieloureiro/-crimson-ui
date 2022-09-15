@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths:
-    - 'packages/colors/**'
+      - 'packages/colors/**'
 
 jobs:
   deploy:
@@ -23,7 +23,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-          cache: npm
 
       - name: Deploy
-        - run: npm install && npm build
+        run: npm install && npm build
