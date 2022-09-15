@@ -1,4 +1,4 @@
-name: 'COLORS_CI'
+name: Run CI at @crimson-ui/colors
 
 on:
   push:
@@ -22,7 +22,7 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-      - name: checkout
+      - name: Checkout
         uses: actions/checkout@v2
         with:
           # pulls all commits (needed for lerna to correctly version)
@@ -30,13 +30,20 @@ jobs:
           fetch-depth: '0'
 
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'npm'
 
-      - name: Install Dependencies
-        run: npm install
+      - uses: actions/cache@v2
+        with:
+          path: ~/.cache/yarn
+          key: ${{ runner.os }}-yarn-${{ hasFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
+          restore-keys: |
+            ${{ runner.os }}-yarn-
 
-      - name: Deploy
-        run: npm run build
+      - name: Install Dependencies and build
+        run: |
+          node --version
+          yarn --version
+          yarn --frozen-lockfile
+          yarn build

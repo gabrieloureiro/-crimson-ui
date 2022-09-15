@@ -6,4 +6,5 @@ yarn-error.log
 .npmrc
 *.log
 .cache
-
+.npmrc
+.yarnrc

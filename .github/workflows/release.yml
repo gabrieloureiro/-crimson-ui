@@ -1,20 +1,8 @@
-name: Run CI at @crimson-ui/react
+name: Publish @crimson-ui to npmjs
 
 on:
-  push:
-    branches:
-      - master
-    paths:
-      - 'packages/react/**'
-      - 'packages/styles/**'
-      - 'packages/web/**'
-  pull_request:
-    branches:
-      - master
-    paths:
-      - 'packages/react/**'
-      - 'packages/styles/**'
-      - 'packages/web/**'
+  release:
+    types: [created]
 
 jobs:
   build:
@@ -34,6 +22,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
+          registry-url: 'https://registry.npmjs.org'
 
       - uses: actions/cache@v2
         with:
@@ -42,9 +31,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
-      - name: Install Dependencies and build
+      - name: Publish at NPM
         run: |
-          node --version
-          yarn --version
           yarn --frozen-lockfile
-          yarn build
+          yarn publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
