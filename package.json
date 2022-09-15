@@ -1,6 +1,6 @@
 {
   "name": "crimson-ui",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "author": "Gabriel Loureiro <gabrieloureirof@gmail.com>",
   "license": "MIT",
   "private": false,
@@ -19,9 +19,6 @@
   "lint-staged": {
     "packages/**/src/**/*.{ts,tsx,js,json}": [
       "eslint --fix --ext"
-    ],
-    ".github/workflows/*.yml": [
-      "eslint --fix"
     ]
   },
   "config": {
