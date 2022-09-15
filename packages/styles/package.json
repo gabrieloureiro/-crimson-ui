@@ -1,6 +1,6 @@
 {
   "name": "@crimson-ui/styles",
-  "version": "1.5.8",
+  "version": "1.5.9",
   "author": "Gabriel Loureiro <gabrieloureirof@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/gabrieloureiro/crimson-ui/tree/master/packages/styles/",
@@ -27,7 +27,7 @@
     "build": "cross-env NODE_ENV=production rollup --config --sourcemaps"
   },
   "dependencies": {
-    "@crimson-ui/web": "^1.5.8"
+    "@crimson-ui/web": "^1.5.9"
   },
   "gitHead": "e315f07038ed150b7ba74fdb7bacb9404646c6ff"
 }
