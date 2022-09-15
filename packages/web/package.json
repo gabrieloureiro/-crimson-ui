@@ -1,6 +1,6 @@
 {
   "name": "@crimson-ui/web",
-  "version": "1.5.6",
+  "version": "1.5.7",
   "author": "Gabriel Loureiro <gabrieloureirof@gmail.com>",
   "license": "MIT",
   "source": "src/index.ts",
@@ -27,7 +27,7 @@
     "build": "cross-env NODE_ENV=production rollup --config --sourcemaps"
   },
   "dependencies": {
-    "@crimson-ui/colors": "^1.5.6",
+    "@crimson-ui/colors": "^1.5.7",
     "@stitches/react": "^1.2.8"
   },
   "gitHead": "741ee9a67a3cff301c99297cd65d67611aa4cdac"
